@@ -1,0 +1,45 @@
+@import 'app.variables';
+
+.home {
+  background: color($colors, light);
+}
+.home ion-col {
+  padding: 8px;
+}
+
+.home ion-col h6 {
+  margin-top: 8px;
+}
+
+.home ion-row {
+  padding: 8px;
+}
+
+.func-icon {
+  font-size: 48px;
+  background: white;
+}
+
+.func-text {
+  color: color($colors, primary);
+  font-size: 12px;
+  padding: 8px 0;
+}
+
+.home ion-icon {
+  line-height: 64px;
+  position: relative;
+  vertical-align: middle;
+  width: 64px;
+  height: 64px;
+}
+
+.home ion-icon ion-badge {
+  position: absolute;
+  right: 4px;
+  top:4px;
+}
+
+.home ion-row {
+  padding: 0;
+}
