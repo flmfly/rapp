@@ -1,0 +1,22 @@
+@import 'app.variables';
+
+.calendar {
+  background: color($colors, light);
+  ion-note {
+    font-size: 12px;
+    align-self: flex-start;
+    margin-top: 14px;
+  }
+  ion-icon{
+    width: 12px;
+    max-width: 12px;
+    height: 12px;
+    max-height:12px;
+    line-height: 12px;
+  }
+}
+
+.bg-white {
+  background: white;
+}
+

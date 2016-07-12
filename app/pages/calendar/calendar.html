@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-searchbar hideCancelButton="false" [(ngModel)]="searchQuery" (input)="getItems($event)"></ion-searchbar>
+  </ion-navbar>
+  <ion-toolbar no-border-top>
+    <ion-segment>
+      <ion-segment-button>Today</ion-segment-button>
+      <ion-segment-button>Th</ion-segment-button>
+      <ion-segment-button>Fr</ion-segment-button>
+      <ion-segment-button>Sa</ion-segment-button>
+      <ion-segment-button>Su</ion-segment-button>
+      <ion-segment-button>Mo</ion-segment-button>
+      <ion-segment-button>Tu</ion-segment-button>
+      <ion-segment-button>All</ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="calendar">
+
+  <ion-list>
+    <ion-item-sliding>
+      <ion-item>
+        <h2>
+          休假-年假
+        </h2>
+        <p>
+          <ion-icon name="at"></ion-icon>
+          我
+          <ion-icon name="time"></ion-icon>
+          8:00~12:00
+        </p>
+        <ion-note item-right>
+          <ion-icon name="images" danger></ion-icon>
+          <ion-icon name="mic" danger></ion-icon>
+          <ion-icon name="menu" danger></ion-icon>
+        </ion-note>
+      </ion-item>
+      <ion-item-options>
+        <button primary>
+          Done
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item>
+        <h2>
+          盘点
+        </h2>
+        <p>
+          <ion-icon name="at"></ion-icon>
+          Jimmy Wang
+          <ion-icon name="time"></ion-icon>
+          17:00~20:00
+        </p>
+        <ion-note item-right>
+          <ion-icon name="images" danger></ion-icon>
+        </ion-note>
+      </ion-item>
+      <ion-item-options>
+        <button primary>
+          Done
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+    <ion-item-sliding>
+      <ion-item>
+        <h2>
+          聚餐
+        </h2>
+        <p>
+          <ion-icon name="at"></ion-icon>
+          BOSS
+          <ion-icon name="time"></ion-icon>
+          21:00~23:00
+        </p>
+        <ion-note item-right>
+          <ion-icon name="images" danger></ion-icon>
+          <ion-icon name="mic" danger></ion-icon>
+        </ion-note>
+      </ion-item>
+      <ion-item-options>
+        <button primary>
+          Done
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
+</ion-content>

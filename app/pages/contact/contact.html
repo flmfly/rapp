@@ -1,17 +1,57 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
-  </ion-navbar>
+    <ion-toolbar>
+        <ion-title>
+            Contacts
+        </ion-title>
+        <ion-buttons end>
+            <button royal>
+                <ion-icon name="person-add"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-toolbar>
 </ion-header>
+<ion-content class="contact">
+    <ion-searchbar hideCancelButton="false" [(ngModel)]="searchQuery" (input)="getItems($event)"></ion-searchbar>
+    <ion-list no-margin>
+        <ion-item>
+            <ion-icon name="person" item-left></ion-icon>
+            新的朋友
+        </ion-item>
+        <ion-item>
+            <ion-icon name="people" item-left></ion-icon>
+            我的群组
+        </ion-item>
+    </ion-list>
+    <ion-item-group>
+        <ion-item-divider light>A</ion-item-divider>
+        <ion-item>Angola</ion-item>
+        <ion-item>Argentina</ion-item>
+        <ion-item>Armenia</ion-item>
+        <ion-item>Australia</ion-item>
+        <ion-item>Austria</ion-item>
+    </ion-item-group>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-left></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+    <ion-item-group>
+        <ion-item-divider light>B</ion-item-divider>
+        <ion-item>Bangladesh</ion-item>
+        <ion-item>Belarus</ion-item>
+        <ion-item>Belgium</ion-item>
+        <ion-item>Bhutan</ion-item>
+        <ion-item>Bolivia</ion-item>
+        <ion-item>Brazil</ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+        <ion-item-divider light>C</ion-item-divider>
+        <ion-item>Cambodia</ion-item>
+        <ion-item>Cameroon</ion-item>
+        <ion-item>Canada</ion-item>
+        <ion-item>Chile</ion-item>
+        <ion-item>China</ion-item>
+        <ion-item>Colombia</ion-item>
+        <ion-item>Costa Rica</ion-item>
+        <ion-item>Cuba</ion-item>
+        <ion-item>Cyprus</ion-item>
+        <ion-item>Czech Republic</ion-item>
+    </ion-item-group>
 </ion-content>
