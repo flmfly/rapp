@@ -18,6 +18,6 @@ export class PersonalPage {
     }
 
     enterProfilePage() {
-        this.nav.push(ProfilePage);
+        this.nav.rootNav.push(ProfilePage);
     }
 }

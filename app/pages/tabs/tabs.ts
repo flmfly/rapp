@@ -36,8 +36,5 @@ export class TabsPage {
 
   ionViewDidEnter(){
     this.session.setTabRef(this.tabRef);
-    if(!this.session.isLogin()){
-      this.nav.push(LoginPage, null,{animate: false});
-    }
   }
 }
