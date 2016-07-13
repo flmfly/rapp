@@ -4,8 +4,8 @@
 
 
 
-<ion-tabs>
-  <ion-tab [root]="tab1Root" tabTitle="首页" tabIcon="home"></ion-tab>
+<ion-tabs *ngIf="session.isLogin()" #myTabs>
+  <ion-tab [root]="tab1Root" tabTitle="首页" tabIcon="home" swip></ion-tab>
   <ion-tab [root]="tab1Root" tabBadge="6" tabBadgeStyle="danger" tabTitle="消息" tabIcon="chatboxes"></ion-tab>
   <ion-tab [root]="contactRoot" tabBadge="3" tabBadgeStyle="danger" tabTitle="联系人" tabIcon="book"></ion-tab>
   <ion-tab [root]="calendarRoot" tabBadge="4" tabBadgeStyle="danger" tabTitle="日历" tabIcon="calendar"></ion-tab>

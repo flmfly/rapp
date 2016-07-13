@@ -2,6 +2,8 @@ import {Component} from '@angular/core';
 import {Alert, NavController} from 'ionic-angular';
 import {ResetMobilePage} from '../reset-mobile/reset-mobile';
 import {ResetPasswordPage} from '../reset-password/reset-password';
+import {Session} from '../../providers/session/session'
+import {LoginPage} from "../login/login";
 
 /*
  Generated class for the ProfilePage page.
@@ -14,7 +16,7 @@ import {ResetPasswordPage} from '../reset-password/reset-password';
 })
 export class ProfilePage {
 
-    constructor(private nav:NavController) {
+    constructor(private nav:NavController, private session: Session) {
 
     }
 
@@ -28,5 +30,24 @@ export class ProfilePage {
 
     NIY() {
         this.nav.present(Alert.create({title: 'NIY', buttons: ['OK']}));
+    }
+
+    logout() {
+        this.nav.present(Alert.create({
+            subTitle: '您确定要退出吗？',
+            buttons: [{
+                text: 'OK',
+                handler: () => {
+                    // this.session.setLogin(false);
+                    setTimeout(() => this.session.loginNavController.popToRoot(), 400);
+                    // this.session.loginNavController.pop();
+                }
+            }, {
+                text: 'Cancel',
+                handler: () => {
+
+                }
+            }]
+        }));
     }
 }

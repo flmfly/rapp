@@ -3,7 +3,7 @@
     <ion-searchbar hideCancelButton="false" [(ngModel)]="searchQuery" (input)="getItems($event)"></ion-searchbar>
   </ion-navbar>
   <ion-toolbar no-border-top>
-    <ion-segment>
+    <ion-segment style="padding: 0 16px;">
       <ion-segment-button>Today</ion-segment-button>
       <ion-segment-button>Th</ion-segment-button>
       <ion-segment-button>Fr</ion-segment-button>
@@ -55,6 +55,8 @@
         </p>
         <ion-note item-right>
           <ion-icon name="images" danger></ion-icon>
+          <ion-icon name="mic" dark></ion-icon>
+          <ion-icon name="menu" danger></ion-icon>
         </ion-note>
       </ion-item>
       <ion-item-options>
@@ -75,8 +77,9 @@
           21:00~23:00
         </p>
         <ion-note item-right>
-          <ion-icon name="images" danger></ion-icon>
-          <ion-icon name="mic" danger></ion-icon>
+          <ion-icon name="images" dark></ion-icon>
+          <ion-icon name="mic" dark></ion-icon>
+          <ion-icon name="menu" danger></ion-icon>
         </ion-note>
       </ion-item>
       <ion-item-options>
