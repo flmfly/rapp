@@ -19,39 +19,42 @@
 </ion-header>
 
 
-<ion-content no-padding>
+<ion-content no-padding class="task-center">
     <div [ngSwitch]="category">
         <ion-list *ngSwitchWhen="'1'">
-            <ion-item-sliding *ngFor="let row of mine" (click)="nav2TaskDetail()">
+            <ion-item-sliding *ngFor="let row of mine">
                 <ion-item>
-                    <h2>
-                        {{row.title}}
-                    </h2>
-                    <p>
-                        <ion-grid no-padding>
-                            <ion-row>
-                                <ion-col width-50>
-                                    <ion-icon name="at"></ion-icon>
-                                    {{row.createTime}}
-                                </ion-col>
-                                <ion-col width-50>
-                                    <ion-icon name="person"></ion-icon>
-                                    {{row.to}}
-                                </ion-col>
-                            </ion-row>
-                            <ion-row>
-                                <ion-col>
-                                    <ion-icon name="time"></ion-icon>
-                                    {{row.startTime}}~{{row.endTime}}
-                                </ion-col>
-                            </ion-row>
-                        </ion-grid>
-                    </p>
+                    <a (click)="nav2TaskDetail()">
+                        <h2>
+                            {{row.title}}
+                        </h2>
+                        <p>
+                            <ion-grid no-padding>
+                                <ion-row>
+                                    <ion-col width-50>
+                                        <ion-icon name="at"></ion-icon>
+                                        {{row.createTime}}
+                                    </ion-col>
+                                    <ion-col width-50>
+                                        <ion-icon name="person"></ion-icon>
+                                        {{row.to}}
+                                    </ion-col>
+                                </ion-row>
+                                <ion-row>
+                                    <ion-col>
+                                        <ion-icon name="time"></ion-icon>
+                                        {{row.startTime}}~{{row.endTime}}
+                                    </ion-col>
+                                </ion-row>
+                            </ion-grid>
+                        </p>
+                    </a>
                     <ion-note item-right>
                         <ion-icon name="images" danger></ion-icon>
                         <ion-icon name="mic" danger></ion-icon>
                         <ion-icon name="menu" danger></ion-icon>
                     </ion-note>
+
                 </ion-item>
                 <ion-item-options>
                     <button danger>
@@ -61,27 +64,29 @@
             </ion-item-sliding>
         </ion-list>
         <ion-list *ngSwitchWhen="'2'">
-            <ion-item-sliding *ngFor="let row of tome" (click)="nav2TaskDetail()">
+            <ion-item-sliding *ngFor="let row of tome">
                 <ion-item>
-                    <h2>
-                        {{row.title}}
-                    </h2>
-                    <p>
-                        <ion-grid no-padding>
-                            <ion-row>
-                                <ion-col>
-                                    <ion-icon name="at"></ion-icon>
-                                    {{row.createTime}}
-                                </ion-col>
-                            </ion-row>
-                            <ion-row>
-                                <ion-col>
-                                    <ion-icon name="time"></ion-icon>
-                                    {{row.startTime}}~{{row.endTime}}
-                                </ion-col>
-                            </ion-row>
-                        </ion-grid>
-                    </p>
+                    <a (click)="nav2TaskDetail()">
+                        <h2>
+                            {{row.title}}
+                        </h2>
+                        <p>
+                            <ion-grid no-padding>
+                                <ion-row>
+                                    <ion-col>
+                                        <ion-icon name="at"></ion-icon>
+                                        {{row.createTime}}
+                                    </ion-col>
+                                </ion-row>
+                                <ion-row>
+                                    <ion-col>
+                                        <ion-icon name="time"></ion-icon>
+                                        {{row.startTime}}~{{row.endTime}}
+                                    </ion-col>
+                                </ion-row>
+                            </ion-grid>
+                        </p>
+                    </a>
                     <ion-note item-right>
                         <ion-icon name="images" danger></ion-icon>
                         <ion-icon name="mic" danger></ion-icon>
