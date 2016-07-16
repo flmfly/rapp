@@ -1,0 +1,36 @@
+@import "app.variables";
+
+.attendance-center {
+
+  .calendar {
+    ion-col {
+      padding: 8px 8px;
+    }
+    .header {
+      background: color($colors, primary);
+      color: white;
+    }
+    .body{
+      ion-col {
+        border: solid 1px color($colors, light);
+      }
+      .green{
+        background: color($colors, favorite);
+        color: white;
+      }
+      .warning {
+        background: color($colors, warning);
+        color: white;
+      }
+
+      .red {
+        background: color($colors, primary);
+        color: white;
+      }
+    }
+
+  }
+  .color-warning {
+    color: color($colors, warning);
+  }
+}

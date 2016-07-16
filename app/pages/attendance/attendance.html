@@ -1,0 +1,61 @@
+<!--
+  Generated template for the AttendancePage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>考勤</ion-title>
+        <ion-buttons end>
+            <button royal (click)="nav2AttendanceCenter()">
+                More
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding class="attendance">
+    <ion-list>
+        <ion-item>
+            <ion-avatar item-left>
+                <img src="img/avatar/avatar-ts-buzz.png"/>
+            </ion-avatar>
+            <h3>Jimmy Wang</h3>
+            <p>员工号:888888</p>
+        </ion-item>
+    </ion-list>
+
+    <ion-list>
+        <ion-item>
+            <h2>
+                <ion-icon primary name="locate"></ion-icon>
+                <span dark>上海市浦东新区世纪大道100号</span>
+            </h2>
+            <p style="padding-left: 3px;padding-top:8px">
+                <ion-icon primary name="calendar"></ion-icon>
+                <span dark>星期三 2016.7.7</span>
+                <ion-icon primary name="time"></ion-icon>
+                <span dark>08:29:30</span>
+            </p>
+        </ion-item>
+    </ion-list>
+    <ion-list>
+        <ion-item>
+            <ion-label> 选择考勤类型</ion-label>
+            <ion-select [(ngModel)]="gaming">
+                <ion-option value="nes">上班签入</ion-option>
+                <ion-option value="n64">下班签出</ion-option>
+                <ion-option value="ps">用餐签入</ion-option>
+                <ion-option value="genesis">用餐签出</ion-option>
+            </ion-select>
+        </ion-item>
+    </ion-list>
+
+    <button fab fab-bottom fab-center>
+        <ion-icon name="md-qr-scanner"></ion-icon>
+    </button>
+</ion-content>

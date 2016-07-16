@@ -1,0 +1,8 @@
+@import 'app.variables';
+
+.attendance {
+  background: color($colors, light);
+  ion-list .item-inner {
+    border-bottom: none;
+  }
+}

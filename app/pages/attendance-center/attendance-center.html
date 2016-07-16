@@ -1,0 +1,118 @@
+<!--
+  Generated template for the AttendanceCenterPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>我的考勤</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding class="attendance-center">
+  <ion-toolbar primary>
+    <ion-buttons start>
+      <button>
+        <ion-icon name="arrow-dropleft"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>July 2017</ion-title>
+    <ion-buttons end>
+      <button>
+        <ion-icon name="arrow-dropright"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-grid class="calendar" text-center no-padding>
+    <ion-row class="header">
+      <ion-col>S</ion-col>
+      <ion-col>M</ion-col>
+      <ion-col>T</ion-col>
+      <ion-col>W</ion-col>
+      <ion-col>T</ion-col>
+      <ion-col>F</ion-col>
+      <ion-col>S</ion-col>
+    </ion-row>
+    <ion-row class="body">
+      <ion-col>26</ion-col>
+      <ion-col>27</ion-col>
+      <ion-col>28</ion-col>
+      <ion-col>29</ion-col>
+      <ion-col>30</ion-col>
+      <ion-col class="green" (click)="selectDay('1')">1</ion-col>
+      <ion-col>2</ion-col>
+    </ion-row>
+    <ion-row class="body">
+      <ion-col>3</ion-col>
+      <ion-col class="warning" (click)="selectDay('4')">4</ion-col>
+      <ion-col class="green" (click)="selectDay('5')">5</ion-col>
+      <ion-col class="green" (click)="selectDay('6')">6</ion-col>
+      <ion-col class="green" (click)="selectDay('7')">7</ion-col>
+      <ion-col class="green" (click)="selectDay('8')">8</ion-col>
+      <ion-col>9</ion-col>
+    </ion-row>
+    <ion-row class="body">
+      <ion-col>10</ion-col>
+      <ion-col class="green" (click)="selectDay('11')">11</ion-col>
+      <ion-col class="green" (click)="selectDay('12')">12</ion-col>
+      <ion-col class="red" (click)="selectDay('13')">13</ion-col>
+      <ion-col>14</ion-col>
+      <ion-col>15</ion-col>
+      <ion-col>16</ion-col>
+    </ion-row>
+    <ion-row class="body">
+      <ion-col>17</ion-col>
+      <ion-col>18</ion-col>
+      <ion-col>19</ion-col>
+      <ion-col>20</ion-col>
+      <ion-col>21</ion-col>
+      <ion-col>22</ion-col>
+      <ion-col>23</ion-col>
+    </ion-row>
+    <ion-row class="body">
+      <ion-col>24</ion-col>
+      <ion-col>25</ion-col>
+      <ion-col>26</ion-col>
+      <ion-col>27</ion-col>
+      <ion-col>28</ion-col>
+      <ion-col>29</ion-col>
+      <ion-col>30</ion-col>
+    </ion-row>
+    <ion-row class="body">
+      <ion-col>31</ion-col>
+      <ion-col>1</ion-col>
+      <ion-col>2</ion-col>
+      <ion-col>3</ion-col>
+      <ion-col>4</ion-col>
+      <ion-col>5</ion-col>
+      <ion-col>6</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list *ngIf="daySelected">
+    <ion-list-header>
+      2017-7-{{selectedDay}}
+    </ion-list-header>
+    <ion-item>
+      <div>上班签入</div>
+      <ion-note item-right class="color-warning">9：01</ion-note>
+    </ion-item>
+    <ion-item>
+      <div>用餐签入</div>
+      <ion-note item-right>11：29</ion-note>
+    </ion-item>
+    <ion-item>
+      <div>用餐签出</div>
+      <ion-note item-right>12：47</ion-note>
+    </ion-item>
+    <ion-item>
+      <div>上班签出</div>
+      <ion-note item-right>18：42</ion-note>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

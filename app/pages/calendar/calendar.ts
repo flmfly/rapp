@@ -12,6 +12,8 @@ import { NavController } from 'ionic-angular';
 })
 export class CalendarPage {
 
+  private dayOfWeek: string = '0';
+
   constructor(private nav: NavController) {
 
   }

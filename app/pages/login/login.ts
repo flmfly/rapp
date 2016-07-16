@@ -14,8 +14,8 @@ import {Session} from '../../providers/session/session';
 })
 export class LoginPage {
 
-    private username:string;
-    private password:string;
+    private username:string = '1';
+    private password:string = '1';
 
     constructor(private nav:NavController, private session:Session) {
         this.session.loginNavController = nav;
