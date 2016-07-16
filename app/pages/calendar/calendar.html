@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar no-border-top>
-    <ion-segment padding [ngSwitch]="dayOfWeek">
+    <ion-segment padding [(ngModel)]="dayOfWeek">
       <ion-segment-button value="0">Today</ion-segment-button>
       <ion-segment-button value="1">Th</ion-segment-button>
       <ion-segment-button value="2">Fr</ion-segment-button>
