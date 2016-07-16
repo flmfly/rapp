@@ -93,6 +93,9 @@
     </ion-row>
   </ion-grid>
 
+  <div padding *ngIf="!daySelected">
+    点击某天查看明细
+  </div>
   <ion-list *ngIf="daySelected">
     <ion-list-header>
       2017-7-{{selectedDay}}
