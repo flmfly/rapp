@@ -1,13 +1,13 @@
 <ion-header>
   <ion-toolbar no-border-top>
-    <ion-segment padding [(ngModel)]="dayOfWeek">
+    <ion-segment padding [ngSwitch]="dayOfWeek">
       <ion-segment-button value="0">Today</ion-segment-button>
       <ion-segment-button value="1">Th</ion-segment-button>
       <ion-segment-button value="2">Fr</ion-segment-button>
       <ion-segment-button value="3">Sa</ion-segment-button>
       <ion-segment-button value="4">Su</ion-segment-button>
       <ion-segment-button value="5">Mo</ion-segment-button>
-      <ion-segment-button value="6">Tu</ion-segment-button>
+      <ion-segment-button value="">Tu</ion-segment-button>
     </ion-segment>
   </ion-toolbar>
 </ion-header>
@@ -18,7 +18,7 @@
       <ion-list-header>
           未完成
       </ion-list-header>
-    <ion-item-sliding>
+    <ion-item-sliding (click)="nav2TaskDetail()">
       <ion-item>
         <h2>
           休假-年假
@@ -49,7 +49,7 @@
         </button>
       </ion-item-options>
     </ion-item-sliding>
-    <ion-item-sliding>
+    <ion-item-sliding (click)="nav2TaskDetail()">
       <ion-item>
         <h2>
           盘点
@@ -80,7 +80,7 @@
         </button>
       </ion-item-options>
     </ion-item-sliding>
-    <ion-item-sliding>
+    <ion-item-sliding (click)="nav2TaskDetail()">
       <ion-item>
         <h2>
           聚餐
@@ -118,7 +118,7 @@
         <ion-list-header>
             已完成
         </ion-list-header>
-        <ion-item-sliding>
+        <ion-item-sliding (click)="nav2TaskDetail()">
             <ion-item>
                 <h2>
                     休假-年假
@@ -149,7 +149,7 @@
                 </button>
             </ion-item-options>
         </ion-item-sliding>
-        <ion-item-sliding>
+        <ion-item-sliding (click)="nav2TaskDetail()">
             <ion-item>
                 <h2>
                     盘点
@@ -180,7 +180,7 @@
                 </button>
             </ion-item-options>
         </ion-item-sliding>
-        <ion-item-sliding>
+        <ion-item-sliding (click)="nav2TaskDetail()">
             <ion-item>
                 <h2>
                     聚餐

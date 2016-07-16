@@ -22,7 +22,7 @@
 <ion-content no-padding>
     <div [ngSwitch]="category">
         <ion-list *ngSwitchWhen="'1'">
-            <ion-item-sliding *ngFor="let row of mine">
+            <ion-item-sliding *ngFor="let row of mine" (click)="nav2TaskDetail()">
                 <ion-item>
                     <h2>
                         {{row.title}}
@@ -61,7 +61,7 @@
             </ion-item-sliding>
         </ion-list>
         <ion-list *ngSwitchWhen="'2'">
-            <ion-item-sliding *ngFor="let row of tome">
+            <ion-item-sliding *ngFor="let row of tome" (click)="nav2TaskDetail()">
                 <ion-item>
                     <h2>
                         {{row.title}}

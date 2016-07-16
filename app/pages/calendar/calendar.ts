@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import {TaskDetailPage} from '../task-detail/task-detail';
 
 /*
   Generated class for the CalendarPage page.
@@ -18,4 +19,7 @@ export class CalendarPage {
 
   }
 
+  nav2TaskDetail() {
+    this.nav.push(TaskDetailPage);
+  }
 }

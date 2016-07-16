@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {NavController} from 'ionic-angular';
 import {AddTaskPage} from '../add-task/add-task';
 import {Task} from '../../model/task';
+import {TaskDetailPage} from '../task-detail/task-detail';
 /*
  Generated class for the TaskCenterPage page.
 
@@ -12,6 +13,7 @@ import {Task} from '../../model/task';
     templateUrl: 'build/pages/task-center/task-center.html',
 })
 export class TaskCenterPage {
+
 
     private category:string = '1';
 
@@ -39,5 +41,9 @@ export class TaskCenterPage {
 
     nav2AddTask() {
         this.nav.push(AddTaskPage);
+    }
+
+    nav2TaskDetail() {
+        this.nav.push(TaskDetailPage);
     }
 }
