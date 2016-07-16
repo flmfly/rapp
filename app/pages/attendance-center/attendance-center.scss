@@ -14,6 +14,9 @@
       ion-col {
         border: solid 1px color($colors, light);
       }
+      ion-col a {
+        color: white;
+      }
       .green{
         background: color($colors, favorite);
         color: white;
