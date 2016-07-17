@@ -6,39 +6,40 @@
 -->
 
 <ion-content no-padding class="personal">
-  <ion-list>
-    <ion-item style="height: 100px; border: none;padding-top:16px">
-      <ion-avatar item-left>
-        <img src="img/avatar/avatar-ts-buzz.png" />
-      </ion-avatar>
-      <h3>Jimmy Wang</h3>
-      <p>员工号:888888</p>
-      <button clear item-right (click)="enterProfilePage()">
-        <ion-icon name="arrow-forward"></ion-icon>
-      </button>
-    </ion-item>
-  </ion-list>
+    <ion-list>
+        <ion-item style="height: 128px; padding-top:32px">
+            <ion-avatar item-left>
+                <img src="img/avatar/avatar-ts-buzz.png"/>
+            </ion-avatar>
+            <h3>Jimmy Wang</h3>
+            <p>员工号:888888</p>
+            <button clear item-right (click)="enterProfilePage()">
+                <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+        </ion-item>
+    </ion-list>
 
-  <ion-list>
-    <ion-item style="height: 72px; border: none">
-      <div item-left text-center="">
-        <img src="img/tea_cup.png" />
-        <div style="font-size: 12px">剩余年假</div>
-      </div>
+    <ion-list>
+        <ion-list-header>
+            假期
+        </ion-list-header>
+        <button ion-item (click)="nav2VacationList()">
+            <div item-left text-center="">
+                <img src="img/tea_cup.png"/>
+                <!--<div style="font-size: 12px">剩余年假</div>-->
+            </div>
 
-      <h3>去年转移至今年：88天</h3>
-      <h3>今年：88天</h3>
-    </ion-item>
-  </ion-list>
+            <h3>去年转移至今年：88天</h3>
+            <h3>今年：88天</h3>
+            <h3>今年剩余病假：88天</h3>
+        </button>
+        <!--<button ion-item>-->
+            <!--<div item-left text-center="">-->
+                <!--<img src="img/umbrella.png"/>-->
+                <!--<div style="font-size: 12px">剩余病假</div>-->
+            <!--</div>-->
 
-  <ion-list>
-    <ion-item style="height: 72px; border: none">
-      <div item-left text-center="">
-        <img src="img/umbrella.png" />
-        <div style="font-size: 12px">剩余病假</div>
-      </div>
-      <h3>今年剩余病假：88天</h3>
-    </ion-item>
-  </ion-list>
+        <!--</button>-->
+    </ion-list>
 
 </ion-content>

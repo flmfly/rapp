@@ -18,14 +18,15 @@
   .forgot {
     position: absolute;
     right:0;
-    padding-top: 6px;
+    top:0;
+    //padding-top: 6px;
   }
 }
 .logo-area {
   color: white;
   background: color($colors, primary);
-  height: 128px;
-  line-height: 128px;
+  height: 192px;
+  line-height: 192px;
   vertical-align: middle;
   width: 100%;
   display: inline-block;

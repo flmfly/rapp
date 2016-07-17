@@ -1,7 +1,7 @@
 <ion-header>
-    <ion-toolbar style="padding: 0;height: 128px">
+    <ion-toolbar style="padding: 0;height: 192px">
         <div class="logo-area" text-center>
-            <h1 style="padding-top: 24px">LOGO</h1>
+            <h1 style="padding-top: 56px">LOGO</h1>
         </div>
     </ion-toolbar>
 </ion-header>
@@ -22,7 +22,7 @@
     <div padding style="position: relative">
         <ion-checkbox></ion-checkbox>
         <span class="remeber">记住我</span>
-        <a class="forgot" padding primary>忘记密码？</a>
+        <button clear class="forgot" (click)="nav2FindPassword()">忘记密码？</button>
     </div>
 
     <div padding style="padding-top: 0">

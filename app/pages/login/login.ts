@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {Alert, NavController} from 'ionic-angular';
 import {TabsPage} from '../tabs/tabs';
 import {Session} from '../../providers/session/session';
+import {FindPasswordPage} from '../find-password/find-password';
 
 /*
  Generated class for the LoginPage page.
@@ -35,8 +36,12 @@ export class LoginPage {
         }
     }
 
-    private resetData(){
+    private resetData() {
         this.username = '';
         this.password = '';
+    }
+
+    nav2FindPassword() {
+        this.nav.push(FindPasswordPage);
     }
 }

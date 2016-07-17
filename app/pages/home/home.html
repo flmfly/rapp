@@ -27,25 +27,29 @@
         <ion-row text-center>
             <ion-col width-25>
                 <button clear large (click)="nav2Attendance()" style="width: 100%">
-                    <ion-icon class="func-icon" primary name="notifications">
+                    <ion-icon primary name="notifications">
                         <ion-badge danger>7</ion-badge>
                     </ion-icon>
                 </button>
                 <div class="func-text">考勤</div>
             </ion-col>
             <ion-col width-25>
-                <ion-icon class="func-icon" primary name="paper-plane">
-                    <ion-badge danger>2</ion-badge>
-                </ion-icon>
+                <button clear large style="width: 100%">
+                    <ion-icon primary name="paper-plane">
+                        <ion-badge danger>2</ion-badge>
+                    </ion-icon>
+                </button>
                 <div class="func-text">请假</div>
             </ion-col>
             <ion-col width-25>
-                <ion-icon class="func-icon" primary name="heart"></ion-icon>
+                <button clear large style="width: 100%">
+                    <ion-icon primary name="heart" style="margin-left: -4px"></ion-icon>
+                </button>
                 <div class="func-text">客户管理</div>
             </ion-col>
             <ion-col width-25>
                 <button clear large (click)="nav2TaskCenter()" style="width: 100%">
-                    <ion-icon class="func-icon" primary name="list-box"></ion-icon>
+                    <ion-icon primary name="list-box"></ion-icon>
                 </button>
                 <div class="func-text">任务中心</div>
             </ion-col>

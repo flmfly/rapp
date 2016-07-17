@@ -2,6 +2,9 @@
 
 .home {
   background: color($colors, light);
+  button {
+    background: white;
+  }
 }
 .home ion-col {
   padding: 8px;
@@ -15,15 +18,12 @@
   padding: 8px;
 }
 
-.func-icon {
-  font-size: 48px;
-  background: white;
-}
+
 
 .func-text {
   color: color($colors, primary);
   font-size: 12px;
-  padding: 8px 0;
+  padding-left: 4px;
 }
 
 .home ion-icon {
