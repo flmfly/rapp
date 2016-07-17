@@ -4,12 +4,13 @@
 
   .calendar {
     border-bottom: solid 1px #999;
-    ion-col {
-      padding: 8px 8px;
-    }
+
     .header {
       background: color($colors, primary);
       color: white;
+      ion-col {
+        padding: 8px 8px;
+      }
     }
     .body{
       ion-col {
@@ -33,6 +34,11 @@
         background: color($colors, primary);
         color: white;
       }
+    }
+    button {
+      padding:0;
+      margin:0;
+      width: 100%;
     }
 
   }
